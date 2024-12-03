@@ -1,0 +1,17 @@
+.dataOut{
+    height: 100vh;
+    width: 80%;
+    /* border: 3px solid black; */
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.dataIn{
+    margin-top: 20px;
+    font-size: 2rem;
+    border: 1px solid black;
+    height: 80%;
+    width: 90%;
+}

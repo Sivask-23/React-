@@ -1,0 +1,113 @@
+.outDat{
+    width: 85%;
+    min-height: 100vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+
+.inData{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.postCont{
+    width: 46%;
+    height: auto;
+    background-color: rgb(131, 247, 255);
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1%;
+    box-shadow: 5px 5px 5px gray;
+    transition: transform 0.4s;
+    font-family: 'Arial', sans-serif;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+
+.postCont:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+
+    
+}
+
+.pno{
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.ptitle{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 90%;
+}
+
+.pbody{
+    font-size: 1.2rem;
+    width: 90%;
+}
+
+.pauthor{
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* border: 1px solid black; */
+    text-align: end;
+    font-weight: bold;
+}
+
+.pauthor .item{
+  color: white;
+  background-color: transparent;
+  border: none;
+
+}
+
+
+/* Gradient Animation (Optional) */
+.postCont {
+    background: linear-gradient(135deg, #960a8a, #529797, #571c70, #3498db);
+    background-size: 400% 400%;
+    animation: gradientFlow 10s infinite;
+  }
+  
+  @keyframes gradientFlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+

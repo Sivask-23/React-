@@ -1,0 +1,7 @@
+.outBar{
+    width: 15%;
+    min-height: 100vh;
+    background-color: rgb(139, 139, 235);
+    background: linear-gradient(to right, #8e44ad, #1da0f7);
+    color: white;
+}

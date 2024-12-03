@@ -1,0 +1,92 @@
+.outerDiv{
+    height: 50px;
+    background-color: #e9eef6;
+    display: flex;
+    padding: 8px 8px 8px 8px;
+    justify-content: center;
+}
+
+.innerDiv{
+
+    width: 98%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-start;
+}
+
+.iconDiv {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconDiv svg{
+    font-size: 1.5rem;
+}
+
+.iconDiv:hover {
+    background-color: #cbd4e4; /* Darker gray on hover */
+    /* transform: scale(1.1); */
+  }
+
+.menuDiv{
+    width: 19%;
+    height: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: flex-start;
+}
+.comp{
+    width: 50%;
+    height: 90%;
+    display: flex;
+}
+
+.logoDiv1{
+    height: 90%;
+    min-width: 40%;
+    /* border: 1px solid black; */
+    background: url("../img/Gmail_Logo_16px.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scale(0.55);
+    
+}
+
+.texDiv{
+    height: 90%;
+    min-width: 40%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    padding: 0;
+}
+
+
+
+.searchBar{
+    width: 45%;
+    height: 95%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+}
+
+.sear{
+    width: 95%;
+    height: 90%;
+    border-radius: 30px;
+    background-color: #cbd4e4;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    border: none;
+}
+.sear:hover{
+    background-color: white;
+}

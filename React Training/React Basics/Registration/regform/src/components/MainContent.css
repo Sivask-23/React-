@@ -1,0 +1,8 @@
+.cont{
+    width: 100%;
+    min-height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    padding-top: 90px;
+   
+}

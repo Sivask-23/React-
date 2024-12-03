@@ -1,0 +1,152 @@
+Lal Krishnan
+19:05
+1 min
+mic connecting
+Lal Krishnan
+19:36
+import logo from './logo.svg';
+import './App.css';
+import Sample from "./FirstCmp"
+import Header from './components/Header';
+import LeftBar from './components/LeftBar';
+import Content from './components/Content';
+
+function App() {
+
+  const handleHeaderClicked=()=>{
+    alert("Clicked on Header")
+  }
+
+  return (
+    <div className="App" >
+        <Header 
+          testName={"AB"}
+          sampleName={"XYZ"}
+
+          onClickOnHeader={handleHeaderClicked}
+
+         />
+         <button></button>
+//Header 
+function Header(props){
+    
+    console.log(props)
+
+    const {testName,sampleName} = props;
+
+    const logoutHandler=()=>{
+        alert("Logout clicked");
+    }
+
+    return <div id="header">
+        Gmail : {testName} == {sampleName} 
+       
+        <button onClick={logoutHandler}>Logout</button>
+
+        <button onClick={props.onClickOnHeader}>Header event</button>
+
+        </div>
+}
+
+export default Header;
+Lal Krishnan
+19:52
+import React from "react";
+
+function Content(){
+
+    const [count,setCount] = React.useState(0);
+    const handleIncrement=()=>{
+        setCount(count+1);
+    }
+    const handleDec=()=>{
+        setCount(count-1); 
+    }
+    return <div>
+                <h1 style={{textAlign:"center"}}>Count :: {count}</h1>
+                <button onClick={handleIncrement} >+</button>
+                <button onClick={handleDec}>-</button>
+    </div>
+}
+
+export default Content;
+Lal Krishnan
+20:02
+import React from "react";
+
+function Content(props){
+
+    const [count,setCount] = React.useState(0);
+    const handleIncrement=()=>{
+        setCount(count+1);
+    }
+    const handleDec=()=>{
+        setCount(count-1); 
+    }
+    return <div>
+        
+        <h1>{props.title}</h1>
+
+        <h1 style={{textAlign:"center"}}>Count :: {count}</h1>
+        <button onClick={handleIncrement} >+</button>
+        <button onClick={handleDec}>-</button>
+    </div>
+}
+
+export default Content;
+import logo from './logo.svg';
+import './App.css';
+import Sample from "./FirstCmp"
+import Header from './components/Header';
+import LeftBar from './components/LeftBar';
+import Content from './components/Content';
+import React from 'react';
+
+function App() {
+  const [testTitle,setTestTitile] = React.useState("");
+
+  const handleHeaderClicked=()=>{
+    setTestTitile("Header clicked");
+  }
+
+  return (
+    <div className="App" >
+        <Header 
+          testName={"AB"}
+          sampleName={"XYZ"}
+onClickOnHeader={handleHeaderClicked}
+
+         />
+         3333333333 {testTitle} 33333333333333333
+         <button></button>
+        <main className='main-container'>
+            <LeftBar />
+            <Content title={testTitle} />
+        </main>
+    </div>
+  );
+}
+
+export default App;
+function Header(props){
+    
+    console.log(props)
+
+    const {testName,sampleName} = props;
+
+    const logoutHandler=()=>{
+        alert("Logout clicked");
+    }
+
+    return <div id="header">
+        Gmail : {testName} == {sampleName} 
+       
+        <button onClick={logoutHandler}>Logout</button>
+
+        <button onClick={props.onClickOnHeader}>Header event</button>
+
+        </div>
+}
+
+export default Header;
+msq-wvxp-dwq
